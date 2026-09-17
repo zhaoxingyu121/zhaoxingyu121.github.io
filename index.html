@@ -3,209 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xingyu Zhao · Personal Page</title>
+    <title>Xingyu Zhao</title>
     <style>
-        /* 极简风格，只保留必要的呼吸感和可读性 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* 懒人风格：几乎没有样式，只保证能看 */
         body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
-        }
-
-        .card {
-            max-width: 680px;
-            width: 100%;
-            background: #ffffff;
-            border-radius: 28px;
-            padding: 3rem 2.5rem;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04), 0 4px 10px rgba(0, 0, 0, 0.02);
-            border: 1px solid #e9eef3;
-            transition: box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06), 0 6px 14px rgba(0, 0, 0, 0.02);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            color: #222;
+            line-height: 1.5;
+            background: #fff;
         }
 
         h1 {
-            font-size: 2.6rem;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.4rem;
-            color: #0f172a;
-            line-height: 1.2;
+            font-size: 1.8rem;
+            font-weight: normal;
+            margin-bottom: 0.2rem;
         }
 
         .subhead {
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #0000cc;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 1.5rem 0;
+        }
+
+        h2 {
             font-size: 1.2rem;
-            color: #475569;
-            margin-bottom: 1.75rem;
-            font-weight: 400;
-            border-left: 4px solid #94a3b8;
-            padding-left: 1rem;
+            font-weight: normal;
+            margin-bottom: 0.8rem;
         }
 
-        .email {
-            display: inline-block;
-            font-size: 1.1rem;
-            background: #f1f5f9;
-            padding: 0.4rem 1rem;
-            border-radius: 40px;
-            margin-bottom: 2rem;
-            color: #1e293b;
-            font-weight: 500;
-            text-decoration: none;
-            transition: background 0.15s, color 0.15s;
-            border: 1px solid #e2e8f0;
-            word-break: break-all;
+        ul {
+            padding-left: 1.5rem;
         }
 
-        .email:hover {
-            background: #e2e8f0;
-            color: #0f172a;
-            border-color: #cbd5e1;
+        li {
+            margin-bottom: 0.8rem;
         }
 
-        .section-title {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-            font-weight: 600;
-            color: #64748b;
-            margin-bottom: 1.2rem;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 0.6rem;
-        }
-
-        .interest-block {
-            display: flex;
-            flex-direction: column;
-            gap: 1.6rem;
-        }
-
-        .interest-item {
-            padding: 0.25rem 0;
-        }
-
-        .interest-years {
-            font-weight: 600;
-            font-size: 1.05rem;
-            color: #0f172a;
-            display: inline-block;
-            background: #f1f5f9;
-            padding: 0.2rem 0.9rem;
-            border-radius: 30px;
-            margin-bottom: 0.7rem;
-            border: 1px solid #e2e8f0;
-            letter-spacing: 0.01em;
-        }
-
-        .interest-desc {
-            font-size: 1.15rem;
-            color: #1e293b;
-            font-weight: 450;
-            padding-left: 0.2rem;
-            border-left: 3px solid #cbd5e1;
-            padding-left: 1rem;
-            margin-left: 0.2rem;
-        }
-
-        .interest-desc strong {
-            font-weight: 600;
-            color: #0f172a;
-        }
-
-        .footnote {
-            margin-top: 2.8rem;
-            font-size: 0.9rem;
-            color: #94a3b8;
-            text-align: right;
-            border-top: 1px solid #e9eef3;
-            padding-top: 1.5rem;
-        }
-
-        /* 小屏幕微调 */
-        @media (max-width: 480px) {
-            .card {
-                padding: 2rem 1.5rem;
-                border-radius: 22px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .subhead {
-                font-size: 1rem;
-                padding-left: 0.8rem;
-            }
-
-            .email {
-                font-size: 0.95rem;
-            }
-
-            .interest-desc {
-                font-size: 1rem;
-            }
-
-            .interest-years {
-                font-size: 0.95rem;
-            }
+        .reason {
+            color: #555;
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
-    <main class="card">
-        <!-- 姓名 -->
-        <h1>Xingyu Zhao</h1>
+    <h1>Xingyu Zhao</h1>
 
-        <!-- 学校 + 专业 + 年级 -->
-        <div class="subhead">
-            Beijing Normal University · Master's Student (Year 2) · Fundamental Mathematics
-        </div>
+    <p class="subhead">
+        Beijing Normal University<br>
+        Master's Student (Year 2), Fundamental Mathematics<br>
+        <a href="mailto:xingyuzhao@mail.bnu.edu.cn">xingyuzhao@mail.bnu.edu.cn</a>
+    </p>
 
-        <!-- 邮箱 -->
-        <a href="mailto:xingyuzhao@mail.bnu.edu.cn" class="email">
-            xingyuzhao@mail.bnu.edu.cn
-        </a>
+    <hr>
 
-        <!-- 研究兴趣 -->
-        <div class="section-title">Research Interests</div>
+    <h2>Research Interests</h2>
+    <ul>
+        <li>
+            <strong>2020 – 2025:</strong> Algebraic Topology
+        </li>
+        <li>
+            <strong>2025 – 2026:</strong> Optimizer Algorithms and Model Quantization in Large Language Models
+        </li>
+    </ul>
 
-        <div class="interest-block">
-            <!-- 2020 - 2025 代数拓扑 -->
-            <div class="interest-item">
-                <div class="interest-years">2020 – 2025</div>
-                <div class="interest-desc">
-                    <strong>Algebraic Topology</strong>
-                </div>
-            </div>
+    <hr>
 
-            <!-- 2025 - 2026 优化器 + 量化 (LLM) -->
-            <div class="interest-item">
-                <div class="interest-years">2025 – 2026</div>
-                <div class="interest-desc">
-                    <strong>Optimizer Algorithms &amp; Model Quantization in Large Language Models</strong>
-                </div>
-            </div>
-        </div>
+    <h2>Recommended Books (Algebraic Topology)</h2>
+    <ul>
+        <li>
+            <em>A Concise Course in Algebraic Topology</em> — J. P. May<br>
+            <span class="reason">Reason: extremely concise.</span>
+        </li>
+        <li>
+            <em>Modern Classical Homotopy Theory</em> — Jeffrey Strom<br>
+            <span class="reason">Reason: thoroughly implements the language of category theory.</span>
+        </li>
+        <li>
+            <em>Bordism, Stable Homotopy and Adams Spectral Sequences</em> — Stanley O. Kochman<br>
+            <span class="reason">Reason: very concrete examples and computations.</span>
+        </li>
+    </ul>
 
-        <!-- 简单脚注，可选，保持干净 -->
-        <div class="footnote">
-            last updated · 2026
-        </div>
-    </main>
+    <hr>
+
+    <p style="color:#888; font-size:0.9rem;">last updated · 2026</p>
 </body>
 </html>
